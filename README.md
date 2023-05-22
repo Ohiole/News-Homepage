@@ -26,6 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
+![Screenshot 2023-05-22 at 20-25-28 Frontend Mentor News homepage](https://github.com/Ohiole/News-Homepage/assets/67792211/af9a3032-f641-4c8b-9b96-020616e0ae7f)
+
 
 ### Links
 
