@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    padding: 0 10rem;
+}
+
+header{
+    padding: 1rem 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    transition: all .3s linear;
+}
+
+a:hover{
+    color:  hsl(5, 85%, 63%);
+}
+
+.menubar{
+    display: none;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+}
+
+.upSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.imageAndText{
+    width: 100%;
+}
+
+.image .desktopImage{
+    width: 100%;
+    height: auto;
+}
+
+.image .mobileImage{
+    display: none;
+}
+
+.imageText{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.imageTextHead h1{
+    font-weight: 800;
+    font-size: 3rem;
+    width: 250px;
+    color: hsl(240, 100%, 5%);
+}
+
+.textAndButton{
+    display: flex;
+    flex-direction: column;
+}
+
+.textAndButton p{
+    font-size: 1rem;
+    width: 300px;
+    line-height: 1.5;
+    color: hsl(236, 13%, 42%);
+}
+
+.btn{
+    width: 180px;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: inherit;
+    letter-spacing: 0.15em;
+    border: none;
+    margin-top: 2rem;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+
+.asideText{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 2rem 1rem;
+    width: 45%;
+}
+
+.asideTextHeader{
+    color: hsl(35, 77%, 62%);
+    font-size: 1.875rem;
+}
+
+.asideQuestions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.article{
+    padding-bottom: 1.5rem;
+}
+
+.article h2{
+    font-size: 1.25rem;
+    line-height: 1.8;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.article h2:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+.article p{
+    width: 85%;
+    color: hsl(233, 8%, 79%);
+}
+
+.article.withBorder{
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.downSection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.news{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.newsImage img{
+    width: 120px;
+    height: 130px;
+}
+
+.newsText{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5em;
+}
+
+.newsText h1{
+    color: hsl(233, 8%, 79%);
+    font-size: 2rem;
+}
+
+.newsText h2{
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.newsText h2:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.newsText p{
+    color: hsl(236, 13%, 42%);
+    font-size: 1rem;
+    width: 90%;
+    margin-top: 0.25rem;
+}
+
+@media screen and (max-width: 1230px) {
+    body{
+        padding: 0;
+    }
+    .upSection{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imageTextHead h1{
+        width: 100%;
+    }
+    .textAndButton p{
+        width: 100%;
+    }
+    .asideText{
+        width: 100%;
+    }
+    .imageText{
+        flex-direction: column;
+    }
+    .downSection{
+        grid-template-columns: 1fr;
+    }
+    .news{
+        justify-content: unset;
+    }
+    
+}
+
+@media screen and (max-width: 605px){
+    body.changeBgColor{
+        background-color: rgb(128, 128, 128);
+        overflow: hidden;
+    }
+    header{
+        overflow-x: hidden;
+    }
+    ul{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 1rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: hsl(36, 100%, 99%);
+    }
+    ul.showTheNav{
+        display: flex;
+    }
+    a{
+        color: hsl(240, 100%, 5%);
+        font-weight: 500;
+    }
+    .menubar{
+        display: flex;
+        cursor: pointer;
+        z-index: 10;
+        transition: all .3s ease-out;
+    }
+    .menu.menushow{
+        display: none;
+    }
+    .close{
+        display: none;
+    }
+    .close.menushow{
+        display: flex;
+    }
+    .desktopImage{
+        display: none;
+    }
+    .image .mobileImage{
+        display: flex;
+        width: 100%;
+    }
+}
