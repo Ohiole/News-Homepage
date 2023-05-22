@@ -156,6 +156,6 @@ I want to focus mainly on mastering javascript
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Ohiole](https://www.frontendmentor.io/profile/Ohiole)
+- Twitter - [@__ojoo](https://www.twitter.com/__ojoo)
 
