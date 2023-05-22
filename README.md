@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Ohiole/News-Homepage)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://ohiole.github.io/News-Homepage/))
 
 ## My process
 
